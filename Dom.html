@@ -1,0 +1,27 @@
+<!Doctype HTML>
+
+<html>
+<head>
+    <title>DOM Exercise</title>
+    <style>
+        #sayhello {
+            cursor: pointer;
+            background-color: red;
+            width: 100px;
+        }
+    </style>
+</head>
+    
+<body>
+    <div id="sayhello">Say Hello</div>
+
+    <script>
+        document.getElementById('sayhello').addEventListener('click', function(){
+            document.getElementById('sayhello').style.backgroundColor = 'yellow';
+            document.getElementById('sayhello').style.width = '300px';
+            alert('WHY YOU CHANGE ME???');
+        });
+        
+    </script>
+</body>
+</html>
